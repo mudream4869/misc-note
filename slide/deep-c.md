@@ -6,7 +6,7 @@
 
 ## 問題1
 
-```
+```c
 int main(){
     int a = 42;
     printf("%d\n", a);
@@ -27,7 +27,7 @@ int main(){
 
 ## 問題2
 
-```
+```c
 #include <stdio.h>
 
 void foo(void){
@@ -45,7 +45,7 @@ int main(void){
 
 * 會印出 `1` `2` `3`，因為Standard有說`static`會預設`0`
 
-```
+```c
 #include <stdio.h>
 
 void foo(void){
