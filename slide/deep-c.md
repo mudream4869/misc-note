@@ -67,3 +67,52 @@ int main(void){
 ### 為什麼`static var`和`auto var`一個會初始化，一個不會。
 
 * 假如`auto var`要初始化，那就會在call function時多花一些時間，然而C想要省時間，所以不會初始化`auto var`。全域變數會是`0`因為只需要做一次。
+
+## 問題3
+
+```c
+#include <stdio.h>
+
+int main(){
+    int a = 41;
+    a = a++;
+    printf("%d\n", a);
+}
+```
+
+* `a`是未定義，因為違反了C和C++基本規則：在同一指令(`Sequence Point`)下更新同一個變數一次以上。
+
+```c
+#include <stdio.h>
+
+int b(){puts("3"); return 3;}
+int c(){puts("4"); return 4;}
+
+int main(){
+    int a = b() + c();
+    printf("%d\n", a);
+}
+```
+
+* 可能會是`3 4 7`或者`4 3 7`，因為大部份的運算子沒有特別聲明(`unspecified`)計算順序
+* 順序有可能會因為不同平台，不同優化而有所不同。
+
+## 問題4
+
+```c
+#include <stdio.h>
+struct X{int a; char b; int c;};
+
+int main(){
+    printf("%d\n", sizeof(int));
+    printf("%d\n", sizeof(char));
+    printf("%d\n", sizeof(struct X));
+}
+```
+
+* 首先是`sizeof`的回傳型態是`size_t`，是`unsigned`型態，在32bit機器和64bit機器上通常分別是`unsigned int`和`unsigned long`
+* 在C99底下，有`%zu`對應。
+* 首先`sizeof(char)`確認是`1`。
+* 在32bit模式底下，會是`4 1 12`。假如想獲得`4 1 9`的話，要加`-fpack-struct`來避免對齊。
+* 對齊的原因是因為假如不對齊，執行期間會耗掉很多時間。
+* *耗時原因待理解* **(TODO)**
