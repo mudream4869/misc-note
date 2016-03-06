@@ -12,3 +12,7 @@
 ## 投影片
 
 * [Deep C](slide/deep-c.md)
+
+## 學校課程
+
+* [NLP](school-course/NLP/README.md)
