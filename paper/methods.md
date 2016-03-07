@@ -2,6 +2,8 @@
 
 # A Latent Source Model for Nonparametric Time Series Classification
 
+[Source](http://papers.nips.cc/paper/5116-a-latent-source-model-for-nonparametric-time-series-classification.pdf)
+
 ## Weighted Majority Voting and Nearest-Neighbor Classification
 
 首先給一堆時間序列的資料（s : Z -> R），每筆時間序列都會有一個標籤:(`1`或`-1`)。
