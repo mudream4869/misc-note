@@ -73,3 +73,19 @@ NLP是神馬？
 * 增加一些資訊，像是semantic labeling
 * 小部分是理論
 * 有些是工程（*engineering*）
+
+# 獲取知識的瓶頸
+
+提供一個大型的知識庫困難且耗時
+
+* 一些資料庫進行式
+
+    - WordNet [Fellbaum, 1998]
+    – Open Mind Word Expert [Chklovski & Mihalcea, 2002] – EuroWordNet [Vossen, 1998]
+    – Multilingual Central Repository [Atserias et al. 2004]
+    – The WordNetPlus project [Boyd-Graber et al., 2006]
+    – OntoNotes [Hovy et al., 2006]
+    – Wikipedia (collaborative effort)
+    – Wiktionary (collaborative effort)
+    – Omega Wiki (collaborative effort)
+
