@@ -24,3 +24,42 @@
 * 固定表達 : in short(O), in shorter(X)
 
 * 有一些**Workshop**
+
+## 尋找方法？
+
+### 頻率法
+
+1. 尋找常出現的組合（quantitative techique）
+1. 依照詞性(POS)過濾
+
+| Tag Pattern | Example           | 
+| ----------- | ----------------- |
+| A N         | linear function   |
+| N N         | regression coff   |
+| N P N       | degree of freedom | 
+
+
+### 平均和變異數
+
+* 這種方法對於固定的片語很方便，可有些有非固定的距離。
+
+* EX : 
+    - She *knocked* on his *door*. (distance = 2)
+    - A man *knocked* on the metal front *door*. (distance = 4)
+
+* **bigrams at a distance**
+* 枚舉distance, position
+* 尋找距離變異數小的
+
+### 猜想驗證
+
+前面的方法尋找後，有可能變異小的只是巧合。
+
+* t-Test
+
+* Null Hypothesis
+    檢驗 P(ab) =? P(a)P(b) (也就是是否沒有關係)
+
+* Pearson’s Chi-Square test
+
+* Joint Entropy and Conditional Entropy
