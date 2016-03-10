@@ -81,11 +81,11 @@ NLP是神馬？
 * 一些資料庫進行式
 
     - WordNet [Fellbaum, 1998]
-    – Open Mind Word Expert [Chklovski & Mihalcea, 2002] – EuroWordNet [Vossen, 1998]
-    – Multilingual Central Repository [Atserias et al. 2004]
-    – The WordNetPlus project [Boyd-Graber et al., 2006]
-    – OntoNotes [Hovy et al., 2006]
-    – Wikipedia (collaborative effort)
-    – Wiktionary (collaborative effort)
-    – Omega Wiki (collaborative effort)
+    - Open Mind Word Expert [Chklovski & Mihalcea, 2002] – EuroWordNet [Vossen, 1998]
+    - Multilingual Central Repository [Atserias et al. 2004]
+    - The WordNetPlus project [Boyd-Graber et al., 2006]
+    - OntoNotes [Hovy et al., 2006]
+    - Wikipedia (collaborative effort)
+    - Wiktionary (collaborative effort)
+    - Omega Wiki (collaborative effort)
 
