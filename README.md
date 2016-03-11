@@ -4,6 +4,7 @@
 ## 書
 
 * [Topics In Game Theory](book/Topics-In-Game-Theory/README.md)
+* [Introduction To Quantum Computation](book/Introduction-To-Quantum-Computation/book.md)
 
 ## 數學
 
