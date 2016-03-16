@@ -122,13 +122,13 @@ U_f%20%3A%20%7C%20x%20%5Crangle%20%7C%20y%20%5Crangle
 
 1. Step1 : 設置系統為
 
-![](https://latex.codecogs.com/gif.latex?
+    ![](https://latex.codecogs.com/gif.latex?
 %5Clarge%20%7C%20%5Cphi_0%20%5Crangle
 %20%3D%20%7C%200%20%5Crangle%20%5E%7B%5Cotimes%20n%7D%20%7C%201%20%5Crangle)
 
 2. Step2
 
-![](https://latex.codecogs.com/gif.latex?
+    ![](https://latex.codecogs.com/gif.latex?
 %7C%20%5Cphi_1%20%5Crangle%20%3D%20H_n%20%28%7C%200%20%5Crangle
 %20%5E%7B%5Cotimes%20n%7D%29%20H_1%28%7C%201%20%5Crangle%29%20%3D%20
 %5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%20%7C%20x%20%5Crangle
@@ -136,7 +136,7 @@ U_f%20%3A%20%7C%20x%20%5Crangle%20%7C%20y%20%5Crangle
 
 3. Step3 : 使用`U_f`
 
-![](https://latex.codecogs.com/gif.latex?
+    ![](https://latex.codecogs.com/gif.latex?
 %7C%20%5Cphi_2%20%5Crangle%20%3D%20
 %5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20
 %5Cfrac%7B%28-1%29%5E%7Bf%28x%29%7D%7D%7B%5Csqrt%7B2%7D%7D%20%7C%20x%20%5Crangle
@@ -145,7 +145,7 @@ U_f%20%3A%20%7C%20x%20%5Crangle%20%7C%20y%20%5Crangle
 
 4. 然後我們再 apply `H_n`
 
-![](https://latex.codecogs.com/gif.latex?
+    ![](https://latex.codecogs.com/gif.latex?
 %7C%20%5Cphi_3%20%5Crangle%20%3D%20
 %5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%5C%7D%5En%7D
 %5Csum_%7Bz%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20
@@ -155,3 +155,6 @@ U_f%20%3A%20%7C%20x%20%5Crangle%20%7C%20y%20%5Crangle
 %20%7D%7B%5Csqrt%7B2%7D%7D%20%5Cright%20%5D)
 
 5. 考察`0^n`的機率強度
+
+    * 假如`f(x)`是常數，則強度為`-1`或者`+1`
+    * 否則是`0`
