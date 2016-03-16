@@ -85,3 +85,73 @@ Schrödinger equation：
 
 ![](https://latex.codecogs.com/gif.latex?%7C%20%5Cphi%20%5Crangle%20%3D%20%7C%20%5Cphi_1%20%5Crangle%20%5Cotimes%20
 ...%20%5Cotimes%20%7C%20%5Cphi_n%20%5Crangle%20%3D%20%7C%20%5Cphi_1%20%5Crangle%20...%20%7C%20%5Cphi_n%20%5Crangle)
+
+# Quantum Algorithm
+
+## Deutsch' Algorithm
+
+考慮`f:{0, 1} -> {0, 1}`，在一般情況下，
+我們需要訪問`f`兩次才有辦法知道`f(1) = f(0)`還是`f(1) =/= f(0)`。
+
+現在我們考慮 U unitary
+
+![](https://latex.codecogs.com/gif.latex?
+U_f%20%3A%20%7C%20x%20%5Crangle%20%7C%20y%20%5Crangle
+%20%5Crightarrow%20%7C%20x%20%5Crangle%20%7C%20y%20%5Coplus%20f%28x%29%20%5Crangle)
+
+使用這operator，就會發現
+
+![](https://latex.codecogs.com/gif.latex?
+%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%28%7C%200%20%5Crangle%20&plus;
+%20%7C%201%20%5Crangle%29%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%28%7C%200%20%5Crangle
+%20-%20%7C%201%20%5Crangle%29%20%5Crightarrow%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%28%28-1%29%5E%7Bf%280%29%7D%7C%200%20%5Crangle
+%20&plus;%20%28-1%29%5E%7Bf%281%29%7D%7C%201%20%5Crangle%29%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%28%7C%200%20%5Crangle
+%20-%20%7C%201%20%5Crangle%29)
+
+## Deutsch - Jozsa Algorithm
+
+接下來就是Deutsch Algorithm的進階版，考慮`f: n bits -> {0, 1}`，
+已知f要嘛是常數，要嘛`f(x) = 0`的解個數等於`f(x) = 1`的解個數。
+
+以下演算法用到`H` Hadamard transform
+
+![](https://latex.codecogs.com/gif.latex?
+%5Clarge%20H_n%20%7C%20i%20%5Crangle%20%3D%20
+%5Csum_%7Bj%7D%20%5Cfrac%7B%28-1%29%5E%7Bi%20%5Ccdot
+%20j%7D%7D%7B%5Csqrt%7B2%20%5En%7D%7D%20%7C%20j%20%5Crangle)
+
+1. Step1 : 設置系統為
+
+![](https://latex.codecogs.com/gif.latex?
+%5Clarge%20%7C%20%5Cphi_0%20%5Crangle
+%20%3D%20%7C%200%20%5Crangle%20%5E%7B%5Cotimes%20n%7D%20%7C%201%20%5Crangle)
+
+2. Step2
+
+![](https://latex.codecogs.com/gif.latex?
+%7C%20%5Cphi_1%20%5Crangle%20%3D%20H_n%20%28%7C%200%20%5Crangle
+%20%5E%7B%5Cotimes%20n%7D%29%20H_1%28%7C%201%20%5Crangle%29%20%3D%20
+%5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%7D%7D%20%7C%20x%20%5Crangle
+%20%5Cleft%5B%20%5Cfrac%7B%7C0%20%5Crangle%20-%20%7C%201%20%5Crangle%20%7D%7B%5Csqrt%7B2%7D%7D%20%5Cright%20%5D)
+
+3. Step3 : 使用`U_f`
+
+![](https://latex.codecogs.com/gif.latex?
+%7C%20%5Cphi_2%20%5Crangle%20%3D%20
+%5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20
+%5Cfrac%7B%28-1%29%5E%7Bf%28x%29%7D%7D%7B%5Csqrt%7B2%7D%7D%20%7C%20x%20%5Crangle
+%20%5Cleft%5B%20%5Cfrac%7B%7C0%20%5Crangle%20-%20%7C%201%20%5Crangle%20%7D%7B
+%5Csqrt%7B2%7D%7D%20%5Cright%20%5D)
+
+4. 然後我們再 apply `H_n`
+
+![](https://latex.codecogs.com/gif.latex?
+%7C%20%5Cphi_3%20%5Crangle%20%3D%20
+%5Csum_%7Bx%20%5Cin%20%5C%7B%200%2C%201%5C%7D%5En%7D
+%5Csum_%7Bz%20%5Cin%20%5C%7B%200%2C%201%20%5C%7D%5En%7D%20
+%5Cfrac%7B%28-1%29%5E%7Bf%28x%29%20&plus;
+%20x%20%5Ccdot%20z%7D%7D%7B%5Csqrt%7B2%7D%7D%20%7C%20x%20%5Crangle
+%20%5Cleft%5B%20%5Cfrac%7B%7C0%20%5Crangle%20-%20%7C%201%20%5Crangle
+%20%7D%7B%5Csqrt%7B2%7D%7D%20%5Cright%20%5D)
+
+5. 考察`0^n`的機率強度
