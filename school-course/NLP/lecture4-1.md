@@ -72,10 +72,25 @@ P(w_n | w_1...w_{n-1}) ~ P(w_n | w_{n-1}) ?
 
 * 估計一個句子的機率
 
-P(I want to eat english food)
-= P(I | start of sentence)P(want | I)...
+
+   P(I want to eat english food)
+   = P(I | start of sentence)P(want | I)...
+   
+   * Shannon’s Method 生出一個可能性大的字句
 
 * 發現一些特殊點：
+   
    * P(english | want) < P(chinese | want) ==> 偏好
    * P(to | want) > 0.5 ==> 語法等
    * P(I | start of sentence)
+
+## Perplexity
+
+計算驚訝的程度，測量模型的好壞
+
+## log space
+
+P_1 P_2 P_3 = e ^ {log P_1 log P_2 log P_3}
+
+## Google N-Gram Release
+
