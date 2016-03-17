@@ -63,3 +63,24 @@
 * Pearson’s Chi-Square test
 
 * Joint Entropy and Conditional Entropy
+
+## Emotion Analysis
+
+* Yahoo Emotion
+
+```
+Sentence  = w + w + Ew + ...
+```
+
+* Emotion e = {e_1, ..., e_m}
+* Word w = {w_1, ..., w_n}
+* Es(w_i) = {es_i1, ..., es_ik} 
+
+Sentence = w + Sad + w + Ha + :)
+
+### Method evulation
+
+* Tag = {`neg`, `pos`} : 
+    
+    * Use `svm`
+    * Sentence Classifire
