@@ -42,3 +42,40 @@ EX :
     * etc
 
 ## 回到 Word Counting
+
+![](https://latex.codecogs.com/gif.latex?
+P%28w_n%20%7C%20w_1...w_%7Bn-1%7D%29%20%3D%20P%28%7Bw_1...w_n%7D%29/P%28%7Bw_1...w_%7Bn-1%7D%7D%29)
+
+* 但是我們可能會獲得`0/0`
+* Chain rule ?
+
+![](https://latex.codecogs.com/gif.latex?
+P%28w_1w_2w_3%29%20%3D%20P%28%7Bw_1w_2w_3%7D%29/P%28w_1w_2%29%20%5Ctimes%20P%28w_1w_2%29/P%28w_1%29%20%5Ctimes%20P%28w_1%29)
+
+* 或者，我們做些簡化
+
+P(w_n | w_1...w_{n-1}) ~ P(w_n | w_{n-1}) ?
+
+* The Maximum Likelihood Estimate (MLE)
+
+## Berkeley Restaurant Project Sentences
+
+2-gram
+
+|      | I    | want | to   | eat  |
+| ---- | ---- | ---- | ---- | ---- |
+|  I   | 5    | 827  | 0    | 9    |
+| want | 2    | 0    | 608  | 1    |
+| to   | 2    | 0    | 4    | 686  |
+
+...
+
+* 估計一個句子的機率
+
+P(I want to eat english food)
+= P(I | start of sentence)P(want | I)...
+
+* 發現一些特殊點：
+   * P(english | want) < P(chinese | want) ==> 偏好
+   * P(to | want) > 0.5 ==> 語法等
+   * P(I | start of sentence)
