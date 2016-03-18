@@ -13,6 +13,8 @@
 ## 投影片
 
 * [Deep C](slide/deep-c.md)
+* [A history of the development of NTRU](slide/A-history-of-the-development-of-NTRU.md)
+* [Por fin entiendo qué son las mónadas](slide/Por-fin-entiendo-qué-son-las-mónadas.md)
 
 ## 學校課程
 
