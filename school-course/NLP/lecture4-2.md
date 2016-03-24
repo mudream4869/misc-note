@@ -67,3 +67,33 @@ Laplace : 讓每個N-gram都先出現1次
 ### Train vs heldout
 
 ![](https://latex.codecogs.com/gif.latex?P_ho%28w%29%20%3D%20%5Cfrac%7BT_r%7D%7BN_rN%7D)
+
+### Good-Turing discounting
+
+* c < k => ![](https://latex.codecogs.com/gif.latex?c%5E*_%7BGT%7D%20%3D%20%28c&plus;1%29%5Cfrac%7BN_%7Bc&plus;1%7D%7D%7BN_c%7D)
+* c >= k => ![](https://latex.codecogs.com/gif.latex?c%5E*_%7BGT%7D%20%3D%20c)
+
+* 但是 N_{c+1} = 0 ? Smoothing! => ![](https://latex.codecogs.com/gif.latex?%5Clog%7BN_c%7D%20%3D%20a%20&plus;%20b%20%5Clog%20c)
+
+### Absolute Discounting
+
+![](https://latex.codecogs.com/gif.latex?r%5E*_%7BAbs%7D%20%3D%20r%20-%20%5Cdelta%20%5C%20%5C%20if%20%5C%20%5C%20r%20%3E%200)
+
+![](https://latex.codecogs.com/gif.latex?r%5E*_%7BAbs%7D%20%3D%20%5Cfrac%7B%5Cdelta%28B-N_0%29%7D%7BN_0%7D%20%5C%20%5C%20if%20%5C%20%5C%20r%20%3D%200)
+
+## Combining Estimators I
+
+* Simple Linear Interpolation
+* Katz's Backing Off
+* General Linear Interpolation
+
+### Simple Linear Interpolation
+
+![](https://latex.codecogs.com/gif.latex?P_%7Bli%7D%28w_n%20%7C%20w_%7Bn-2%7D%2C%20w_%7Bn-1%7D%29%20%3D%20%5Clambda_1p_1%28w_n%29%20&plus;%20%5Clambda_2p_2%28w_n%20%7C%20w_%7Bn-1%7D%29%20&plus;%20%5Clambda_3p_3%28w_n%20%7C%20w_%7Bn-2%7D%2C%20w_%7Bn-1%7D%29)
+
+* 完全沒有出現過？ + 1/N
+
+### General Linear Interpolation
+
+![](https://latex.codecogs.com/gif.latex?P_%7Bli%7D%28w%20%7C%20h%29%20%3D%20%5Csum%20%5Clambda_i%28h%29P_i%28w%20%7C%20h%29)
+
