@@ -37,4 +37,21 @@ S_k%20%3D%20%5C%7B%20%28a%2C%20b%29%20%5Cin
     ![](https://latex.codecogs.com/gif.latex?a%5E2%20%5Cleq%20ab%27%20%3D%20b%5E2%20-%20k)
     
     如此推出`a < b`矛盾
-    
+
+## 台灣 TST 2011
+
+![](https://latex.codecogs.com/gif.latex?k=%5Cfrac%7Ba%5E2%20&plus;%20b%5E2%20&plus;%206%7D%7Bab%7D%20%5Cin%20%5Cmathbb%7BN%7D)
+
+證明：k是立方數
+
+*pf* :
+
+固定`k`，選一個**最小**解`(a, b)`，並且`a >= b`。
+
+由跟與係數關係(重複上面推斷)，可以得到
+
+![](https://latex.codecogs.com/gif.latex?b%20%5Cleq%20a%20%5Cleq%20%5Csqrt%7Bb%5E2%20&plus;%206%7D)
+
+* `a = b` => a = b = 1 => k = 8
+* `a = b+1` => 無解
+
