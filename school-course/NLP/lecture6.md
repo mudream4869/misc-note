@@ -36,4 +36,20 @@ HMM:
 2. 給訂Model, Observation Seq：求最可能的Seq
 3. 給定Observation Seq : 訓練參數
 
+* Problem 1,2 : DP(*Forwarding Algorithm*)
 
+    * |States| = N
+    * |ObSeq| = T
+
+    ```code
+    dp = [N+2][T] # 包含 Start, Final
+    
+    for s in States
+        dp[s][1] = P(Start -> s)P(ObSeq[1] | s)
+    
+    for t in [2, T]
+        for s in States
+            dp[s][t] = Sum dp[s'][t-1] P(s' -> s) P(ObSeq[t] | s)
+    
+    ans = Sum dp[s'][T] P(s' -> Final)
+    ```
