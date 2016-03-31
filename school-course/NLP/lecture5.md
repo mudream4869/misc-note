@@ -59,3 +59,5 @@
 ## word2vec
 
 * 並不是單一的演算法
+
+## Explicit Vector Space Representation
