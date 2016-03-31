@@ -56,3 +56,6 @@
 
     > You shall know a word by the company it keeps. (J.R. Firth, 1957)
 
+## word2vec
+
+* 並不是單一的演算法
