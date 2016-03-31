@@ -9,6 +9,7 @@
 ## 數學
 
 * [數學愛好者蒐集](math/數學愛好者.md)
+* [Vietajump](math/Vietajump.md)
 
 ## 投影片
 
