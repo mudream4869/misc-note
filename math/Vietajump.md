@@ -55,3 +55,41 @@ S_k%20%3D%20%5C%7B%20%28a%2C%20b%29%20%5Cin
 * `a = b` => a = b = 1 => k = 8
 * `a = b+1` => 無解
 
+## 羅馬尼亞 MO 2004
+
+![](https://latex.codecogs.com/gif.latex?S%20%3D%20%5Cleft%5C%7B%20%5Cfrac%7Ba%5E2%20&plus;%20ab%20&plus;%20b%5E2%7D%7Bab-1%7D%20%5Cmid%20a%2C%20b%20%5Cin%20%5Cmathbb%7BN%7D%20%5Cright%5C%7D%20%5Ccap%20%5Cmathbb%7BN%7D)
+
+找出S裡所有元素
+
+*sol*:
+
+先枚舉a, b < 4的解：`f(1, 2) = 7`、`f(2, 2) = 4`
+
+設裡面某元素為`t`，可以得到：
+
+![](https://latex.codecogs.com/gif.latex?a%5E2%20-%20%28bt-b%29a%20&plus;%20%28b%5E2%20&plus;%20t%29%20%3D%200)
+
+讓`(a, b)`為最小解，且`a >= b > 3`
+
+* `a + a' = bt - b` => a'是整數
+* `aa' = bb + t` => 
+    - `a'`是正數
+    - `(a', b)`合法解
+    - 因為`(a, b)`最小，所以`a' >= a`
+
+        ![](https://latex.codecogs.com/gif.latex?a%20%5Cleq%20%5Csqrt%7Bb%5E2%20&plus;%20t%7D)
+    
+回到原式：
+
+![](https://latex.codecogs.com/gif.latex?t%20%3D%20%5Cfrac%7Ba%5E2%20&plus;%20ab%20&plus;%20b%5E2%7D%7Bab%20-%201%7D%20%5Cleq%20%5Cfrac%7B3a%5E2%7D%7Bb%5E2%20-%201%7D%20%5Cleq%20%5Cfrac%7B3%28b%5E2%20&plus;%20t%29%7D%7Bb%5E2%20-%201%7D)
+
+=> 
+
+![](https://latex.codecogs.com/gif.latex?t%20%5Cleq%20%5Cfrac%7B3b%5E2%7D%7Bb%5E2%20-%204%7D%20%5Cleq%204)
+
+* t = 1 => aa + bb = -1 : **impossible**
+* t = 2 => aa - ab + bb = -2 : **impossible**
+* t = 3 => (a-b)^2 = -3 : **impossible**
+* t = 4 => ok
+
+=> S = {4, 7}
