@@ -93,3 +93,22 @@ S_k%20%3D%20%5C%7B%20%28a%2C%20b%29%20%5Cin
 * t = 4 => ok
 
 => S = {4, 7}
+
+## USA TST 2002
+
+求出以下的所有解
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%5E2%20&plus;%20b%5E2%7D%7Bab%20-%201%7D%20%5Cin%20%5Cmathbb%7BN%7D)
+
+*sol*:
+
+首先先處理 a, b < 3的所有解：`(1, 2)`
+
+那用上面方法加上條件`a, b > 2`可以得到
+
+![](https://latex.codecogs.com/gif.latex?t%20%3D%20%5Cfrac%7Ba%5E2%20&plus;%20b%5E2%7D%7Bab%20-%201%7D%20%5Cleq%20%5Cfrac%7B2b%5E2%7D%7Bb%5E2%20-%202%7D%20%5Cleq%203)
+
+* t = 1, 2 => **no sol**
+* t = 3 => `3 | a, 3 | b` but **impossible**
+
+=> (a, b) = (1, 2)
