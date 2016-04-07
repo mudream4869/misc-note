@@ -9,3 +9,4 @@
 * [Lecture4-2](lecture4-2.md)
 * [Lecture5](lecture5.md)
 * [Lecture6](lecture6.md)
+* [Lecture7](lecture7.md)
