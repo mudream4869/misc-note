@@ -36,10 +36,10 @@ HMM:
 2. 給訂Model, Observation Seq：求最可能的Seq
 3. 給定Observation Seq : 訓練參數
 
-* Problem 1,2 : DP(*Forwarding Algorithm*)
+### Problem 1,2 : DP(*Forwarding Algorithm*)
 
-    * |States| = N
-    * |ObSeq| = T
+* |States| = N
+* |ObSeq| = T
 
     ```code
     dp = [N+2][T] # 包含 Start, Final
@@ -53,3 +53,8 @@ HMM:
     
     ans = Sum dp[s'][T] P(s' -> Final)
     ```
+
+### Problem 3
+
+*EM Algorithm*：數每個link經過的總共次數，然後重新分配機率。
+
