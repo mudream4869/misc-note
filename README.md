@@ -1,5 +1,5 @@
 # misc-note
-雜七雜八的各種筆記
+雜七雜八的各種筆記📒
 
 ## 書
 
@@ -20,3 +20,4 @@
 ## 學校課程
 
 * [NLP](school-course/NLP/README.md)
+* [機率](school-course/probability/chapter1to4.md)
