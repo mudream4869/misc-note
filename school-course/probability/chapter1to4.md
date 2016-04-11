@@ -55,4 +55,8 @@ E%28g%28X%29%29%20%3D%20E%28%28X%20-%20E%28X%29%5E2%29%29%20%3D%20E%28X%29%5E2%2
 
 ## The Bernoulli Process
 
+### Interval
+
 ## The Poision Process
+
+### Interval
