@@ -21,3 +21,17 @@
 * Overgenerate
     - 過量
     - 在**理解句子**裡，不是問題。
+
+## Rules
+
+### Noun Phase
+
+### Verb Phase
+
+## Index Language
+
+1. Type 0 : Recursively enumerable sets
+2. Type 1 : Context-sensitive languages
+3. *Indexed language : Chomsky hierarchy of languages*
+4. Type 2 : Context-free languages
+5. Type 3 : Finite-state languages
