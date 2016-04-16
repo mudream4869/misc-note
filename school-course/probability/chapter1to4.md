@@ -24,7 +24,7 @@ p_0(x_0) 定義成 Random variable = x_0 的機率
 
 ![](https://latex.codecogs.com/gif.latex?
 E%28g%28X%29%29%20%3D%20E%28%28X%20-%20E%28X%29%5E2%29%29%20%3D%20E%28X%29%5E2%20-%20E%28X%5E2%29)
-   
+
 # Chapter3 : 
 
 ## *s* Transform
@@ -55,7 +55,21 @@ E%28g%28X%29%29%20%3D%20E%28%28X%20-%20E%28X%29%5E2%29%29%20%3D%20E%28X%29%5E2%2
 
 ## The Bernoulli Process
 
-### Interval
+一個離散，每次成功機率固定的過程
+
+* 長度
+
+    - `P(L = l) = p(1-p)^(l-1)`
+    - `Ptrans(z) = zp/(1 - z + zp)`
+    - `E(L) = 1/p`
+    - `Sig = (1-P)/P^2`
+
+* 數量
+    
+    - `P(N = k) = (Cn取k)p^k (1-p)^(n-k)`
+    - `Ptrans(z) = (1 - P + zP)^k`
+    - `E(N = k) = kp`
+    - `Sig = kp(1-p)`
 
 ## The Poision Process
 
