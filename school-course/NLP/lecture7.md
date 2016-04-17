@@ -25,3 +25,11 @@ word -> observation
 tag  -> status
 
 然後求max
+
+![](https://latex.codecogs.com/gif.latex?T%20%3D%20%5Cmax_T%20%5Cprod%20P%28word_i%20%7C%20tag_i%29%20%5Cprod%20P%28tag_i%20%7C%20tag_%7Bi-1%7D%29)
+
+# MEMM
+
+Max Entropy Markov Models
+
+![](https://latex.codecogs.com/gif.latex?T%20%3D%20%5Cmax_T%20%5Cprod%20P%28tag_i%20%7C%20word_i%2C%20tag_%7Bi-1%7D%29)
