@@ -38,6 +38,12 @@ Data sparity + max likelyhood => P = 0
     - Zipf' law : 小部分詞有高機率，大部份詞只有小機率
     - 如何估計從來沒有出現的`N-gram`
 
+### Max Likelyhood Estimated
+
+![](https://latex.codecogs.com/gif.latex?P_%7BMLE%7D%28w_1%2C%20w_2%2C%20...%2C%20w_n%29%20%3D%20%5Cfrac%7BC%28w_1%2C%20...%2C%20w_n%29%7D%7BN%7D)
+
+![](https://latex.codecogs.com/gif.latex?P_%7BMLE%7D%28w_n%20%7C%20w_1%2C%20w_2%2C%20...%2C%20w_%7Bn-1%7D%29%20%3D%20%5Cfrac%7BC%28w_1%2C%20...%2C%20w_n%29%7D%7BC%28w_1%2C%20...%2C%20w_%7Bn-1%7D%29%7D)
+
 ## Smoothing
 
 * Discounting : 把前面看過的弄掉一些，分配給下面的
