@@ -43,9 +43,9 @@ Data sparity + max likelyhood => P = 0
 * Discounting : 把前面看過的弄掉一些，分配給下面的
 * Model combination
 
-### Discounting
+### Laplace Discounting
 
-Laplace : 讓每個N-gram都先出現1次
+讓每個N-gram都先出現1次
 
 ![](https://latex.codecogs.com/gif.latex?P_%7BLap%7D%28w_%7Bn-1%7D%2C%20w_n%29%20%3D%20%5Cfrac%7Br&plus;1%7D%7BB&plus;N%7D)
 
