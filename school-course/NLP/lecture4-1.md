@@ -84,9 +84,25 @@ P(w_n | w_1...w_{n-1}) ~ P(w_n | w_{n-1}) ?
    * P(to | want) > 0.5 ==> 語法等
    * P(I | start of sentence)
 
+### Shannon's Method
+
+* 隨便生一個(start, w)
+* 然後按照f(x) = P(w->x)的機率找(w, x)
+* 直到(x, end)
+
 ## Perplexity
 
 計算驚訝的程度，測量模型的好壞
+
+定義：
+
+![](https://latex.codecogs.com/gif.latex?PP%28W%29%20%3D%20%5Csqrt%5BN%5D%7B%5Cfrac%7B1%7D%7BP%28w_1w_2...w_N%29%7D%7D)
+
+在bigram裡則會簡化為
+
+![](https://latex.codecogs.com/gif.latex?PP%28W%29%20%3D%20%5Csqrt%5BN%5D%7B%5Cprod_%7Bi%20%3D%201%7D%5E%7BN%7D%5Cfrac%7B1%7D%7BP%28w_i%20%7C%20w_%7Bi-1%7D%29%7D%7D)
+
+越小的PP代表Model越好
 
 ## log space
 
