@@ -16,8 +16,13 @@
 * Ruled-based
 * Stochastic
     * HMM
+    * MEMM
 * Transformation-BasedTagger
 * ...
+
+## Ruled-base
+
+通常會需要超過1000條手寫規則
 
 ## HMM
 
