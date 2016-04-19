@@ -57,12 +57,43 @@
 
 * t-Test
 
+    把測試文章當作一種抽樣
+    
+    ![](https://latex.codecogs.com/gif.latex?t%20%3D%20%5Cfrac%7B%5Cbar%7Bx%7D%20-%20%5Cmu%7D%7B%5Csqrt%7B%5Cfrac%7Bs%5E2%7D%7BN%7D%7D%7D)
+
 * Null Hypothesis
     檢驗 P(ab) =? P(a)P(b) (也就是是否沒有關係)
 
 * Pearson’s Chi-Square test
 
 * Joint Entropy and Conditional Entropy
+
+### t-Test Example
+
+* 一個文章裡面有`14307668`個詞
+* *new* 出現`15828`次
+* *companies*出現`4675`次
+* *new companies*出現`8`次
+
+![](https://latex.codecogs.com/gif.latex?P%28new%29%20%3D%20%5Cfrac%7B15828%7D%7B14307668%7D)
+
+![](https://latex.codecogs.com/gif.latex?P%28companies%29%20%3D%20%5Cfrac%7B4675%7D%7B14307668%7D)
+
+假設*new*和*companies*沒有關係，那麼分佈會是
+
+![](https://latex.codecogs.com/gif.latex?%5Cmu%20%3D%20P%28new%29P%28companies%29%20%3D%203.615%20%5Ctimes%2010%5E%7B-7%7D)
+
+而我們所觀察到的*new companies*
+
+![](https://latex.codecogs.com/gif.latex?%5Cbar%7Bx%7D%20%3D%20%5Cfrac%7B8%7D%7B14307668%7D%20%3D%205.591%20%5Ctimes%2010%5E%7B-7%7D)
+
+![](https://latex.codecogs.com/gif.latex?s%5E2%20%3D%20p%281-p%29%20%5Capprox%20p%20%3D%205.591%20%5Ctimes%2010%5E%7B-7%7D)
+
+可以得到
+
+![](https://latex.codecogs.com/gif.latex?t%20%3D%200.99932)
+
+因為`0.999932` < `2.576`，所以我們無法反駁**new和companies沒有關係**這句話。
 
 ## Emotion Analysis
 
