@@ -58,3 +58,12 @@ HMM:
 
 *EM Algorithm*：數每個link經過的總共次數，然後重新分配機率。
 
+1. Step1 :
+
+    * A : a_ij = `C(i->j)/C(i->any)`
+    * B : B\_k(O\_t)都設成`1`
+
+2. Step2 :
+
+    * A' : a\_ij = `E(i->j)/E(i->any)`
+    * B' : B\_j(v\_k) = ?
