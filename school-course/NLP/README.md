@@ -11,3 +11,5 @@
 * [Lecture6 : Hidden Markov Models](lecture6.md)
 * [Lecture7 : Part-of-Speech Tagging](lecture7.md)
 * [Lecture8 : Syntax and Grammars](lecture8.md)
+* [Lecture9](lecture9.md)
+* [Lecture10](lecture10.md)
