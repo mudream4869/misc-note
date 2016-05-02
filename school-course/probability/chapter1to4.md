@@ -5,7 +5,7 @@
 
 # Chapter2 : Random variable
 
-## Probability Mass Function
+## Probability Mass Function(PMF)
 
 p_0(x_0) 定義成 Random variable = x_0 的機率
 
@@ -23,6 +23,18 @@ p_0(x_0) 定義成 Random variable = x_0 的機率
 * EX: 當 g(x) = (x - E(x))^2
 
    ![](https://latex.codecogs.com/gif.latex?E%28g%28X%29%29%20%3D%20E%28%28X%20-%20E%28X%29%5E2%29%29%20%3D%20E%28X%29%5E2%20-%20E%28X%5E2%29)
+
+* E(x^r)稱為  **rth moment of the distribution about origin**
+
+* Moment-Generating Function : `f(t) = E(e^tx)`
+
+## CDF
+
+* `F(x) = P(X <= x)`
+
+## PDF
+
+* `f(x) = F'(x)`
 
 # Chapter3 : 
 
@@ -85,3 +97,24 @@ x, y獨立
     - `Ptrans(z) = (1 - P + zP)^k`
     - `E(N = k) = kp`
     - `Sig = kp(1-p)`
+
+## Poisson Distributions
+
+給訂一段時間，求來的人的分佈數量
+
+* 假設一：下一個的人和這一個來的人獨立
+* 假設二：確實有一個人來的機率 ~ delta t
+* 假設三：
+
+## Exponential Distribution
+
+問兩個arrival間隔多久？
+
+F(w) = P(W <= w) = 1 - P(W > w) = 1 - P(no arrival at [0, w]) = 1 - e^(-l x)
+F'(w) = l e^(-lx)
+
+## Gamma Distribution
+
+第alpha個arrival
+
+F(w) = P(W <= w) = 1 - P(少於alpha個arrival在[0, w]) 
