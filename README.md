@@ -21,3 +21,4 @@
 
 * [NLP](school-course/NLP/README.md)
 * [機率](school-course/probability/chapter1to4.md)
+* [OS](school-course/Operating-System/README.md)
