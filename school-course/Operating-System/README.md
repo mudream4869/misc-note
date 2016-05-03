@@ -2,9 +2,9 @@
 
 學校課程
 
-* [Chapter1 : Introduction](Chapter1.md)
-* [Chapter2 : System Structures](Chapter2.md)
-* [Chapter3 : Process Concept](Chapter3.md)
-* [Chapter4 : Multithreaded Programming](Chapter4.md)
-* [Chapter5 : Process Scheduling](Chapter5.md)
-* [Chapter6 : Synchronization](Chapter6.md)
+* [Chapter1 : Introduction](chapter1.md)
+* [Chapter2 : System Structures](chapter2.md)
+* [Chapter3 : Process Concept](chapter3.md)
+* [Chapter4 : Multithreaded Programming](chapter4.md)
+* [Chapter5 : Process Scheduling](chapter5.md)
+* [Chapter6 : Synchronization](chapter6.md)
