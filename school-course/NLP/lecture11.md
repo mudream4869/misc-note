@@ -47,3 +47,9 @@ w1   w2  w3  w4
 ![](https://latex.codecogs.com/gif.latex?s%28i%2C%20j%29%20%3D%20W%5E%7Bscore%7D%20p%28i%2C%20j%29)
 
 然後從C裡面把`(i, j), (j, i)`移除並且把`(i, j, k)`加進去，其中k在i, j旁邊
+
+# Convolutional Neural Network
+
+卷積神經網路
+
+
