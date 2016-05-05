@@ -35,6 +35,5 @@
 
 可以做機率版的`CKY`
 
-## PRG
+# Find the most likely part for a Sentence
 
-機率型Regular Grammar：每個 `A -> w B` 都有機率
