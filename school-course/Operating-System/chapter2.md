@@ -77,10 +77,18 @@ Layer Approach: 模組化、除錯、驗證，但卻需要**好**的Layer定義�
 
 ## Modules
 
+可以不需reboot os就可以啟動的部分，像是：Solaris裡面的Sheduling Class, Loadable System Calls。
+
 ## Hybrid System
 
 *定義：一些不同結構的組合*
 
 EX: Mac OS X、iOS、Android
 
+## Debugging
 
+* Terminologies
+
+    - Performance Tuning : seek to improve performance by removing bottlenecks
+    - Core Dump : A Capture of the Memory of a Process or OS
+    - Crash : A Kernel Fail
