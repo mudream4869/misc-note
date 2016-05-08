@@ -3,6 +3,12 @@
 * P(A|B) := P(AB)/P(B)
 * If P(A|B) = P(A), then call A, B *independent*
 
+[Monty Hall Problem](http://math.ucsd.edu/~crypto/Monty/montybg.html)
+
+## Law of Total Probability
+
+![](https://latex.codecogs.com/gif.latex?P%28A%29%20%3D%20%5Csum_n%20P%28A%20%5Ccap%20B_n%29)
+
 # Chapter2 : Random variable
 
 ## Probability Mass Function(PMF)
@@ -110,8 +116,9 @@ x, y獨立
 
 問兩個arrival間隔多久？
 
-F(w) = P(W <= w) = 1 - P(W > w) = 1 - P(no arrival at [0, w]) = 1 - e^(-l x)
-F'(w) = l e^(-lx)
+![](https://latex.codecogs.com/gif.latex?F%28w%29%20%3D%20P%28W%20%5Cleq%20w%29%20%3D%201%20-%20P%28no%20%5C%20arrival%20%5C%20at%20%5B0%2C%20w%5D%29%20%3D%201%20-%20e%5E%7B-%5Clambda%20w%7D)
+
+![](https://latex.codecogs.com/gif.latex?F%27%28w%29%20%3D%20%5Clambda%20e%5E%7B-%5Clambda%20w%7D)
 
 ## Gamma Distribution
 
