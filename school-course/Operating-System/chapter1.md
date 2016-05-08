@@ -59,6 +59,8 @@ interrupt\          /  return
 
 ### DMA
 
+**直接記憶體存取 Direct Memory Access**，可獨立讀寫記憶體。
+
 為了避免讓CPU處理太多data interrupt
 
 ## Hardware Protection
@@ -106,6 +108,27 @@ interrupt\          /  return
 * I/O System Management
 
 ## Caching
+
+* Management
+    
+    * Cache Size
+    * Replacement Policy(algorithm)
+
+* Coherence and Consistence
+
+    ```
+    |------|      |-----|      |=====|
+    |Client| <==> |Cache| <==> |  M  |
+    |------|      |-----|      |  E  |
+        conherence--^          |  M  |
+                    v          |  O  |
+    |------|      |-----|      |  R  |
+    |Client| <==> |Cache| <==> |  Y  |
+    |------|      |-----|      |=====|
+    
+    ```
+
+    * Cache consistency requires that all write operations to the same memory location are performed in some sequential order.(wiki)
 
 ## Protection & Securty
 
