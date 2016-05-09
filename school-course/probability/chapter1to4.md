@@ -106,7 +106,9 @@ x, y獨立
 
 ## Poisson Distributions
 
-給訂一段時間，求來的人的分佈數量
+給訂一段時間，平均`lambda`人，求來的人的分佈數量
+
+![](https://latex.codecogs.com/gif.latex?P%28k%20%5C%20event%20%5C%20occurs%29%20%3D%20%5Cfrac%7B%5Clambda%5Eke%5E%7B-%5Clambda%7D%7D%7Bk%21%7D)
 
 * 假設一：下一個的人和這一個來的人獨立
 * 假設二：確實有一個人來的機率 ~ delta t
