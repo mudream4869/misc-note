@@ -29,7 +29,7 @@ New ==> CPU-Burst <==> IO-Burst ==> Terminate
 * CPU Utilization (利用率)
 * Throughput (吞吐率，處理能力)
 * Turnaround Time = Completion Time - Start Time
-* Waiting Time = Waiting in Ready Queue
+* Waiting Time = Start Time - Arrival Time
 * Response Time = First Response Time
 
 ## Scheduling Algorithms
