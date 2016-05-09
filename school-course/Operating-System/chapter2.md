@@ -92,3 +92,19 @@ EX: Mac OS X、iOS、Android
     - Performance Tuning : seek to improve performance by removing bottlenecks
     - Core Dump : A Capture of the Memory of a Process or OS
     - Crash : A Kernel Fail
+
+## VM
+
+| Virtual User Mode    | Process | Process | Process |
+|:--------------------:|:-------:|:-------:|:-------:|
+| Virtual Monitor Mode | Kernel1 | Kernel2 | Kernel3 |
+| monitor mode         |  VM     |  =      | =       |
+
+優點：
+
+* Complete Protection : Complete Isolation !
+* OS Reasearch & Development
+
+### VMware
+
+### JVM
