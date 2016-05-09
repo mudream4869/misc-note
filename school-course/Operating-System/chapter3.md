@@ -14,7 +14,7 @@ EX:
 new --> ready <==> running --> terminated
           ^        /
           ^       /
-        waiting </
+        waiting </>
 ```
 
 * 用 `PCB` 紀錄：Process State, Program Counter, CPU Register, 
@@ -32,13 +32,13 @@ Memory Management Information, Accounting Information, I/O Status Information
 
 ### Contex Switches
 
-**LWP**
+**LWP**，一種介於User thread和Kernel thread的東西
 
 ## Operations on Processes
 
-## Interprocess Communication
+# Interprocess Communication
 
-### Shared Memory
+## Shared Memory
 
 *Example* : 環狀
 
@@ -62,10 +62,64 @@ for(;;){
 }
 ```
 
-### Message Passing
+## Message Passing
 
 邏輯上的定義：
 
 * Msg size : Fixed/Var
 * Communication : Sym/Asym, Direct/Indirect
 * Buffering : Auto/Explicit ...
+
+### Direct Communication
+
+* Process must explicity name the recipient or sender of a communication
+
+* 困難點：`name`??
+
+### Indirect Communication
+
+* Two process can communicate only if the process share a mailbox.
+
+* Issues:
+    
+    - 誰是訊息的接收者？
+
+## Synchronization
+
+* Blocking or Nonblocking ?
+
+    - Blocking send
+    - Nonblocking send
+    - Blocking receive
+    - Nonblocking receive
+    - Rendezvous : blocking send & receive
+
+## Buffering
+
+* Capacity = # of the Msg could be hold in the link
+    
+    - 0 : msg must be sync = Rendezvous
+    - bound : without wait til link full
+    - Unbound : sender never delay
+
+* Special case
+
+    - Sender are block till receiver get and reply : Remote Procedure Call(RPC)
+
+## Exception Conditions
+
+* 程序結束
+
+    - Sender Termination : Notify or terminate the receiver
+    - Receiver Termination : 
+    
+        1. No Capacity : sender is blocked
+        2. Buffering : msg accumulated
+    
+* Lost of msg
+
+    - OS detection ...
+    - Detection Method ?
+        
+        1. Timeout
+        1. Checksum
