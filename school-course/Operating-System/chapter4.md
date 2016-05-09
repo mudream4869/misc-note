@@ -28,6 +28,8 @@
 
 ### Pthread
 
+* User-Level Thread (??)
+
 ```c
 #include <pthread.h>
 int main(int argc, char** argv){
@@ -40,6 +42,16 @@ void* runner(void* par){
    ...
 }
 ```
+
+### Windows Thread
+
+* Kernel-Level Thread
+
+### Java Thread
+
+[Stackoverflow](http://stackoverflow.com/questions/2653458/understanding-javas-native-threads-and-the-jvm)
+
+* n:m Model
 
 ## Implicit Thread
 
@@ -60,6 +72,7 @@ void* runner(void* par){
 * Thread Cancelling
 
     - 兩種取消方法
-    - Async 等待完成
-    - Defer 延遲完成
+        - 非同步取消 (asynchronous cancellation) : 立即結束執行緒
+        - 延遲取消 (deferred cancellation) : 執行緒週期性的檢查是否取消
     - 假如在Thread在更新資料時候被Cancel?
+    
