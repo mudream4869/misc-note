@@ -29,7 +29,7 @@ New ==> CPU-Burst <==> IO-Burst ==> Terminate
 * CPU Utilization (利用率)
 * Throughput (吞吐率，處理能力)
 * Turnaround Time = Completion Time - Start Time
-* Waiting Time = Start Time - Arrival Time
+* Waiting Time = Finish time of that process - Execution time - Arrival time
 * Response Time = First Response Time
 
 ## Scheduling Algorithms
@@ -126,6 +126,12 @@ Nonpreemptive，變形後有 Shortest-Job-First和Priority-First
 
 ## Multicore Processor
 
+A physical chip with multiple processor.
+
+* Issue
+
+    - Memory stall
+
 ## Virtualization and Scheduling
 
 ## Real-Time CPU Scheduling
@@ -159,6 +165,10 @@ Nonpreemptive，變形後有 Shortest-Job-First和Priority-First
 * **Achievable Utilization Factor : `100%`** ??
 
 ## Proportional Share Scheduling 
+
+[wiki](https://en.wikipedia.org/wiki/Proportional_share_scheduling)
+
+* EXAMPLE : Bandwidth Server
 
 ## POSIX Real-Time Scheduling
 
@@ -203,6 +213,34 @@ Nonpreemptive，變形後有 Shortest-Job-First和Priority-First
 
 * Priority-Based Process Scheduling
 
-## Many Models
+## Algorithm Evaluation
 
-??
+用來估計Sheduling Algorithm的方法：
+
+- Deterministic modeling
+- Queueing models
+- Simulation
+- Implementation
+
+### Deterministic Modeling
+
+選定workload，用這Workload去當每個Algorithm的performance
+
+### Queueing Models
+
+把電腦當成一個server，計算**平均queue**長度，**等待時間**。
+
+* 誤差：limit application
+
+### Simulation
+
+1. 先寫一個`Computer Model`
+2. 隨機生一些`workload`模擬
+
+* 誤差：事件的關係性
+
+### Implementation
+
+1. 直接寫 scheduling algorithm
+2. Put to OS
+3. 計算實際行為
