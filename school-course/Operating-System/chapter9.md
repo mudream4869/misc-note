@@ -58,5 +58,44 @@ Effect Access Time = (page fault probility)*(page fault time) + (page hit probil
 把Ref bit的歷史保留下來
 
 | xx | xx | history |
-| -- | -- | ------- |
+|:--:|:--:|:-------:|
 |  1 | -> | 0001010 |
+|  0 | -> | 1000001 |
+| .. | .. | ..      |
+|  1 | -> | 1110000 |
+
+* LRU : get history smallest value
+
+### Second-Chance Algorithm
+
+* When a page is selected : take it as victim if ref-bit = `0`，otherwise use next.
+
+* Enhanced Second-Chance Algorithm : 考慮swapping out的花費
+
+    - `(0, 0)` : 非最近使用，且不髒
+    - `(0, 1)` : 非最近使用，髒
+    - `(1, 0)` : 最近使用，不髒
+    - `(1, 1)` : 最近使用，髒
+
+### Counting-Base
+
+* 數ref的次數
+* Least Freq Used
+* Expansive
+
+## Page Buffering
+
+## Frame Allocation
+
+### Single User(Process)
+
+### Multiple Processes
+
+* m frames , n processes
+    * Equal Allocation
+    * Proportional Allocation
+
+
+
+
+
