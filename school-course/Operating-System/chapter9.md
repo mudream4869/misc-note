@@ -57,5 +57,6 @@ Effect Access Time = (page fault probility)*(page fault time) + (page hit probil
 
 把Ref bit的歷史保留下來
 
-| xx | xx |xxxxxxx |
-| -- | -- |------- |
+| xx | xx | history |
+| -- | -- | ------- |
+|  1 | -> | 0001010 |
