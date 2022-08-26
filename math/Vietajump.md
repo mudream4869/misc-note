@@ -12,11 +12,7 @@
 
 首先先固定非平方數`k`
 
-![](https://latex.codecogs.com/gif.latex?
-S_k%20%3D%20%5C%7B%20%28a%2C%20b%29%20%5Cin
-%20%5Cmathbb%7BN%7D%5E2%20%5C%20%7C%20%5C%20
-%5Cfrac%7Ba%5E2%20&plus;%20b%5E2%7D%7Bab%20&plus;
-%201%7D%20%3D%20k%20%5C%7D)
+![](https://latex.codecogs.com/gif.latex?S_k%20%3D%20%5C%7B%20%28a%2C%20b%29%20%5Cin%20%5Cmathbb%7BN%7D%5E2%20%5C%20%7C%20%5C%20%5Cfrac%7Ba%5E2%20&plus;%20b%5E2%7D%7Bab%20&plus;%201%7D%20%3D%20k%20%5C%7D)
 
 假如 |S| > 0, 那就從裡面挖出一個**最小**(定義為`v((a, b)) = a+b`)的解 `(a, b)`，並且讓 `a >= b`
 
